@@ -7,54 +7,125 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body class="bg-[url('https://www.transparenttextures.com/patterns/black-linen.png')] bg-gray-950 text-white min-h-screen flex flex-col items-center justify-start p-6 bg-fixed bg-cover">
-    
-    <h1 class="text-4xl font-serif text-center mb-10 text-white">
-      Welcome to <span class="text-red-500">616-Initiative</span>, the Multiverse needs you!
-    </h1>
+  <body
+    class="bg-[url('https://www.transparenttextures.com/patterns/black-linen.png')] bg-gray-950 text-white min-h-screen flex flex-col items-center justify-start p-6 bg-fixed bg-cover"
+  >
+    <!-- Preloader -->
+    <div
+      id="loader"
+      class="fixed inset-0 bg-black bg-opacity-90 backdrop-blur-sm flex items-center justify-center z-50"
+    >
+      <img
+        src="images/shield-logo.png"
+        alt="Loading..."
+        class="w-32 h-32 animate-pulse"
+      />
+    </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl w-full">
+    <div
+      class="text-center mb-12 border border-gray-700 rounded-xl p-6 bg-black/20 shadow-lg backdrop-blur-sm w-full max-w-4xl mx-auto"
+    >
+      <h1
+        class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-mono uppercase tracking-wider text-white drop-shadow-md leading-tight"
+      >
+        Operation:
+        <span class="text-red-500 animate-pulse">616-Initiative</span>
+      </h1>
+      <p
+        class="mt-4 text-xs sm:text-sm md:text-base lg:text-lg text-gray-300 tracking-widest uppercase italic"
+      >
+        Status: <span class="text-lime-400">Active</span> — Timeline Divergence
+        Detected
+      </p>
+    </div>
 
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl w-full"
+    >
       <!-- Card Template with Uniform Styling -->
-      <div class="bg-slate-900 rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-transform cursor-pointer" onclick="window.location.href='phaseone.html'">
-        <img src="images/phase1.jpg" alt="Phase 1" class="w-full h-80 object-fill" />
+      <div
+        class="bg-slate-900 rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-transform cursor-pointer"
+        onclick="window.location.href='phaseone.html'"
+      >
+        <img
+          src="images/one.png"
+          alt="Phase 1"
+          class="w-full h-80 object-fill"
+        />
         <div class="p-4">
-          <h2 class="text-xl font-bold text-red-400">Phase 1: Origins & Formation</h2>
+          <h2 class="text-xl font-bold text-red-400">
+            Phase 1: Origins & Formation
+          </h2>
           <p><span class="text-red-300">Years:</span> 2008–2012</p>
         </div>
       </div>
 
-      <div class="bg-slate-900 rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-transform cursor-pointer" onclick="window.location.href='phasetwo.html'">
-        <img src="images/phase2.jpg" alt="Phase 2" class="w-full h-80 object-fill" />
+      <div
+        class="bg-slate-900 rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-transform cursor-pointer"
+        onclick="window.location.href='phasetwo.html'"
+      >
+        <img
+          src="images/two.png"
+          alt="Phase 2"
+          class="w-full h-80 object-fill"
+        />
         <div class="p-4">
-          <h2 class="text-xl font-bold text-red-400">Phase 2: Expansion & Consequences</h2>
+          <h2 class="text-xl font-bold text-red-400">
+            Phase 2: Expansion & Consequences
+          </h2>
           <p><span class="text-red-300">Years:</span> 2013–2015</p>
         </div>
       </div>
 
-      <div class="bg-slate-900 rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-transform cursor-pointer" onclick="window.location.href='phasethree.html'">
-        <img src="images/phase3.jpg" alt="Phase 3" class="w-full h-80 object-fill" />
+      <div
+        class="bg-slate-900 rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-transform cursor-pointer"
+        onclick="window.location.href='phasethree.html'"
+      >
+        <img
+          src="images/three.png"
+          alt="Phase 3"
+          class="w-full h-80 object-fill"
+        />
         <div class="p-4">
           <h2 class="text-xl font-bold text-red-400">Phase 3: War & Fallout</h2>
           <p><span class="text-red-300">Years:</span> 2016–2019</p>
         </div>
       </div>
 
-      <div class="bg-slate-900 rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-transform cursor-pointer" onclick="window.location.href='phasefour.html'">
-        <img src="images/phase4.jpg" alt="Phase 4" class="w-full h-80 object-fill" />
+      <div
+        class="bg-slate-900 rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-transform cursor-pointer"
+        onclick="window.location.href='phasefour.html'"
+      >
+        <img
+          src="images/four.png"
+          alt="Phase 4"
+          class="w-full h-80 object-fill"
+        />
         <div class="p-4">
-          <h2 class="text-xl font-bold text-red-400">Phase 4: Reconstruction & Revelation</h2>
+          <h2 class="text-xl font-bold text-red-400">
+            Phase 4: Reconstruction & Revelation
+          </h2>
           <p><span class="text-red-300">Years:</span> 2021–2022</p>
         </div>
       </div>
 
-      <div class="bg-slate-900 rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-transform cursor-pointer" onclick="window.location.href='phasefive.html'">
-        <img src="images/phase5.jpg" alt="Phase 5" class="w-full h-80 object-fill" />
+      <div
+        class="bg-slate-900 rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-transform cursor-pointer"
+        onclick="window.location.href='phasefive.html'"
+      >
+        <img
+          src="images/five.png"
+          alt="Phase 5"
+          class="w-full h-80 object-fill"
+        />
         <div class="p-4">
-          <h2 class="text-xl font-bold text-red-400">Phase 5: Multiversal Crisis</h2>
+          <h2 class="text-xl font-bold text-red-400">
+            Phase 5: Multiversal Crisis
+          </h2>
           <p><span class="text-red-300">Years:</span> 2023–2025</p>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
