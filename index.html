@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta tags for encoding and responsive design -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page Title -->
     <title>616-Initiative</title>
+
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body
     class="bg-[url('https://www.transparenttextures.com/patterns/black-linen.png')] bg-gray-950 text-white min-h-screen flex flex-col items-center justify-start p-6 bg-fixed bg-cover"
   >
-    <!-- Preloader -->
+    <!--───────────────────────────── Preloader Overlay ─────────────────────────────-->
     <div
       id="loader"
       class="fixed inset-0 bg-black bg-opacity-90 backdrop-blur-sm flex items-center justify-center z-50"
@@ -22,6 +27,7 @@
       />
     </div>
 
+    <!--───────────────────────────── Header Section ─────────────────────────────-->
     <div
       class="text-center mb-12 border border-gray-700 rounded-xl p-6 bg-black/20 shadow-lg backdrop-blur-sm w-full max-w-4xl mx-auto"
     >
@@ -39,10 +45,11 @@
       </p>
     </div>
 
+    <!--───────────────────────────── Phase Cards Grid ─────────────────────────────-->
     <div
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl w-full"
     >
-      <!-- Card Template with Uniform Styling -->
+      <!--────────────── Phase 1 Card ──────────────-->
       <div
         class="bg-slate-900 rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-transform cursor-pointer"
         onclick="window.location.href='phaseone.html'"
@@ -57,9 +64,24 @@
             Phase 1: Origins & Formation
           </h2>
           <p><span class="text-red-300">Years:</span> 2008–2012</p>
+          <!-- Progress Bar -->
+          <div class="mt-2">
+            <div class="flex justify-between text-xs text-gray-300 mb-1">
+              <span>Progress</span>
+              <span id="phase1-progress">0%</span>
+            </div>
+            <div class="w-full bg-gray-700 rounded-full h-2">
+              <div
+                id="phase1-bar"
+                class="bg-red-500 h-2 rounded-full"
+                style="width: 0%"
+              ></div>
+            </div>
+          </div>
         </div>
       </div>
 
+      <!--────────────── Phase 2 Card ──────────────-->
       <div
         class="bg-slate-900 rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-transform cursor-pointer"
         onclick="window.location.href='phasetwo.html'"
@@ -74,9 +96,24 @@
             Phase 2: Expansion & Consequences
           </h2>
           <p><span class="text-red-300">Years:</span> 2013–2015</p>
+          <!-- Progress Bar -->
+          <div class="mt-2">
+            <div class="flex justify-between text-xs text-gray-300 mb-1">
+              <span>Progress</span>
+              <span id="phase2-progress">0%</span>
+            </div>
+            <div class="w-full bg-gray-700 rounded-full h-2">
+              <div
+                id="phase2-bar"
+                class="bg-red-500 h-2 rounded-full"
+                style="width: 0%"
+              ></div>
+            </div>
+          </div>
         </div>
       </div>
 
+      <!--────────────── Phase 3 Card ──────────────-->
       <div
         class="bg-slate-900 rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-transform cursor-pointer"
         onclick="window.location.href='phasethree.html'"
@@ -89,9 +126,24 @@
         <div class="p-4">
           <h2 class="text-xl font-bold text-red-400">Phase 3: War & Fallout</h2>
           <p><span class="text-red-300">Years:</span> 2016–2019</p>
+          <!-- Progress Bar -->
+          <div class="mt-2">
+            <div class="flex justify-between text-xs text-gray-300 mb-1">
+              <span>Progress</span>
+              <span id="phase3-progress">0%</span>
+            </div>
+            <div class="w-full bg-gray-700 rounded-full h-2">
+              <div
+                id="phase3-bar"
+                class="bg-red-500 h-2 rounded-full"
+                style="width: 0%"
+              ></div>
+            </div>
+          </div>
         </div>
       </div>
 
+      <!--────────────── Phase 4 Card ──────────────-->
       <div
         class="bg-slate-900 rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-transform cursor-pointer"
         onclick="window.location.href='phasefour.html'"
@@ -106,9 +158,24 @@
             Phase 4: Reconstruction & Revelation
           </h2>
           <p><span class="text-red-300">Years:</span> 2021–2022</p>
+          <!-- Progress Bar -->
+          <div class="mt-2">
+            <div class="flex justify-between text-xs text-gray-300 mb-1">
+              <span>Progress</span>
+              <span id="phase4-progress">0%</span>
+            </div>
+            <div class="w-full bg-gray-700 rounded-full h-2">
+              <div
+                id="phase4-bar"
+                class="bg-red-500 h-2 rounded-full"
+                style="width: 0%"
+              ></div>
+            </div>
+          </div>
         </div>
       </div>
 
+      <!--────────────── Phase 5 Card ──────────────-->
       <div
         class="bg-slate-900 rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-transform cursor-pointer"
         onclick="window.location.href='phasefive.html'"
@@ -123,9 +190,25 @@
             Phase 5: Multiversal Crisis
           </h2>
           <p><span class="text-red-300">Years:</span> 2023–2025</p>
+          <!-- Progress Bar -->
+          <div class="mt-2">
+            <div class="flex justify-between text-xs text-gray-300 mb-1">
+              <span>Progress</span>
+              <span id="phase5-progress">0%</span>
+            </div>
+            <div class="w-full bg-gray-700 rounded-full h-2">
+              <div
+                id="phase5-bar"
+                class="bg-red-500 h-2 rounded-full"
+                style="width: 0%"
+              ></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+    <!--───────────────────────────── External JavaScript ─────────────────────────────-->
     <script src="script.js"></script>
   </body>
 </html>
